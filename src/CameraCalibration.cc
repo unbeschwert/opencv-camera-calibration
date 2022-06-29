@@ -67,6 +67,8 @@ CameraCalibration::~CameraCalibration() {
 
 }
 
+
+
 void CameraCalibration::fillObjectPoints(std::vector<cv::Point3f>& object_points_buffer) {
     switch(calib_settings.pattern) {
         case(PatternType::CHESS_BOARD): {

@@ -18,6 +18,7 @@ typedef enum {
     LIVE_STREAM = 2
 } InputType;
 
+
 typedef enum {
     CHESS_BOARD = 0,
     CIRCLE_GRID = 1,
