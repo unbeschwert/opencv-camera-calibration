@@ -1,0 +1,28 @@
+{
+    "settings" : {
+        "BoardSize_Width" :  10,
+        "BoardSize_Height" : 7,
+        "Square_Size" : 29,
+        "Calibrate_Pattern" : 0,
+        "Input" : 2,
+        "Input_FlipAroundHorizontalAxis" : 0,
+        "Input_Delay" : 100	,
+        "Calibrate_NrOfFrameToUse" : 30,
+        "Calibrate_FixAspectRatio" :  1 ,
+        "Calibrate_AssumeZeroTangentialDistortion" : 1,
+        "Calibrate_FixPrincipalPointAtTheCenter" :  1 ,
+        "Write_outputFileName" : "output_params.json",
+        "Write_capturedImagesPath" : "/images/",
+        "Write_capturedImageExtension" : ".png",
+        "Write_DetectedFeaturePoints" : 1,
+        "Write_extrinsicParameters" : 1,
+        "Write_gridPoints" : 1,
+        "Show_UndistortedImage" : 1,
+        "Calibrate_UseFisheyeModel" : 0,
+        "Fix_K1" : 0,
+        "Fix_K2" : 0,
+        "Fix_K3" : 0,
+        "Fix_K4" : 1,
+        "Fix_K5" : 1
+    }
+}
