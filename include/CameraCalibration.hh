@@ -14,7 +14,7 @@ typedef enum {
      * selects the source on which calibration should be performed
      */
     CAPTURED_IMAGES = 0,
-	CAPTURED_VIDEO = 1,
+    CAPTURED_VIDEO = 1,
     LIVE_STREAM = 2
 } InputType;
 
@@ -108,7 +108,8 @@ class CameraCalibration {
     // images from a given SDK of a camera.
     // NOTE: The output of getImageFromSDK() should be 
     // cv::Mat
-    void calibrateCamera(std::function<cv::Mat(void*)> getImageFromSDK, 
+    void calibrateCamera(
+            std::function<cv::Mat(void*)> getImageFromSDK, 
             void* handle);
     double computeReprojectionErrors();
     ~CameraCalibration();
