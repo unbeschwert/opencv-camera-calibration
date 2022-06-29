@@ -1,8 +1,8 @@
-#Camera Calibration using OpenCV
+# Camera Calibration using OpenCV
 
 This library facilitates calibration of cameras using [OpenCV](https://opencv.org/) library.
 
-##Installation
+## Installation
 Use the following commands to install the library. Make sure that [OpenCV](https://opencv.org/) is installed
 ```
 git clone https://github.com/unbeschwert/opencv-camera-calibration.git camera-calibration
