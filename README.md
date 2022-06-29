@@ -46,8 +46,10 @@ cv::Mat getImageFromKamera(void* handle) {
     uint8_t channels = rgb_image_handle.get_size() / 
         (width * height * sizeof(uint8_t));
 
-	cv::Mat image = create_matrix_from_buffer<uint8_t>(
-            rgb_image_handle.get_buffer(), height, width, channels);
+    cv::Mat image(height, width, CV_MAKETYPE(
+            cv::DataType<uint8_t>::type, channels));
+    std::memcpy(mat.data, rgb_image_handle.get_buffer(),
+            width * height * channels * sizeof(uint8_t));
 
     rgb_image_handle.reset();
     capture_handle.reset();
